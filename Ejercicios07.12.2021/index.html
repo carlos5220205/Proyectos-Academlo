@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+
+
+    <form id="search-pokemon">  <!-- Creamos un nuevo recipiente form-->
+        <label for=""></label> <!--Used to provide a usability improvement for mouse users.-->
+        <input type="text"  placeholder="Buscar Pokemon" required><!--Used to create an input field where the user can enter data.On this case specifies the text entry. the place holder key its for indicate the words the  input box is going to show as default-->
+        <button type="submit"><!--Creates  button.On this case  it wil submit the current form data.-->
+            <img src="./assets/pokeball.png" alt=""><!--Link an image on an element.On this case , is inside down the button tag , speficies that is an image for the button.--->
+        </button>
+    </form>
+    
+    
+     <div id="pokemon-wrapper">
+        <img src="" alt="">
+        <p></p>
+     </div>
+     
+     <div id="toast" class="hide">
+         <p>Pokemon not catched.</p>
+     </div>
+
+     <div id="loading">
+         <img src="./assets/loading.png" alt="" srcset="">
+         <p>Let's catch it.</p>
+         <div class="loader-swing"></div>
+         
+     </div>
+
+
+    
+    
+    
+    <script src="./Js/main.js"></script>
+</body>
+</html>

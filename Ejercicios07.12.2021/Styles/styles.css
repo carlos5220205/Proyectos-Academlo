@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0 ; 
+    box-sizing: border-box;
+}
+
+body{
+    display: flex; /*Especificamos el comportamiento del orden  de  ún contenido dentro del recipiente */
+    flex-direction: column;
+    justify-content: center;/*Seleccionamos la posisción del texto.*/
+    align-items:center;/*Seleccionamos la alineació de los emenetos. */
+    background-color: rgb(241, 241, 241); /*Fondo de color */
+    min-height: 100vh;/*Ajustamos la altura minima del objeto.*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/* Specifies the font of the letter.*/
+}
+
+
+
+
+#pokemon-wrapper{
+    
+
+    background-color: #ffffff; /*Color fondo */
+    width: 350px; /*Ajustamos la anchura del objeto */
+    height: 350px; /*Ajustamos la Altura del objeto */
+    padding: 2rem ; /*Separación interior de los elementos al margen  recipiente*/
+    text-align: center; /*Alineacion del texto */
+    border-radius: 50%; /*Redondes de las esquinas*/
+    box-shadow: 10px 10px 10px 10px #ccc; /*Sombra del borde , ajustamos el color*/
+    display: flex; /*Especificamos el comportamiento del orden  de  ún contenido dentro del recipiente. En este caso flexible.  */
+    justify-content: center; /*Ajustamos el alineamiento del contenido dentro de un recipiente flecible , en este caso indicamos la alineación al centro.*/
+    flex-direction: column; /*This property specifies the direction of the flexible items.On this case as a column.*/
+    align-items: center; /*Aligns the items on the cross axis .On this case to the center.*/
+}
+
+#pokemon-wrapper img{ /*Seleccionamos el eleemento con el id , y seguido del elemento hijo que queremos modificar.*/
+    width: 200px;/*Ajustamos Altura. Usamos viewport-percentagelenghts.Utilziado para mostr una pagina conresponsabilidad, en este caso vh para ajustar la altura , vw es para ajustar la anchura */
+}
+#pokemon-wrapper p{
+    text-transform: uppercase; /*Transformamos el texto a Mayusculas*/
+
+
+}
+
+form {
+    
+    border: 2px solid black;/*Used tu specify the thickness of border line.*/
+    border-radius: 200px;
+    padding-left:  0.5rem;
+    background-color: white;
+    display: flex;
+    height: 40px;
+    margin-bottom: 1.5rem; /*Specifies the space bettewn the margin botton and the next object */
+}
+
+form input{
+    
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: block;
+    min-height: 100%;
+
+}
+form button{
+    background-color: transparent;
+    border: none;
+    padding-right: .5rem;
+    
+}
+form button img{
+    width: 20px;  
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+}    
+
+ #toast{
+    padding: 1rem;
+    width:35vw;
+
+    margin: auto;
+    background: tomato;
+    color: white;
+    text-align:center;
+    position: absolute;
+    bottom: 200px;
+}
+
+#toast.hide{
+    display: none;
+}
+
+#loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 25, 25, 0.747);
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#loading img{
+    width:  400px;
+
+}
+#loading p{
+    font-size: 100px;
+}
+
+div.loader-swing{
+    animation: swing 3000ms infinite;
+}
