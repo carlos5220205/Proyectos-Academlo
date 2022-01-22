@@ -112,6 +112,3 @@ form button img{
     font-size: 100px;
 }
 
-div.loader-swing{
-    animation: swing 3000ms infinite;
-}
